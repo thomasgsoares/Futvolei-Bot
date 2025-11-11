@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futevôlei Expert IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">Futevôlei Expert IA (Powered by Gemini)</div>
+    <div class="chat-history" id="chatHistory">
+        <div class="message ia-message">Olá! Sou o assistente de Futevôlei. Pergunte-me sobre regras, técnicas, jogadores ou história do esporte!</div>
+    </div>
+    <div class="input-area">
+        <input type="text" id="promptInput" placeholder="Digite sua pergunta...">
+        <button id="sendButton" onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
